@@ -1,0 +1,299 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html { scroll-behavior: smooth; }
+
+.container-wrapper
+{
+    width: 1340px;
+    margin: auto;
+    overflow: hidden;
+}
+header
+{  background-color: #CC678B; }
+nav
+{
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+}
+nav h1
+{
+    color: aliceblue;
+    font-size: 35px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+nav ul
+{
+    display: flex;
+    margin: 2%;
+}
+nav ul li
+{
+    list-style: none;
+    padding: 10px;
+}
+nav ul li a
+{
+    padding: 10px 18px;
+    border-radius: 50px;
+    color: aliceblue;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+nav ul li a:hover
+{
+    color: #CC678B;
+    background-color: #fff;
+    transition: .5s all ;
+    -webkit-transition: .5s all ;
+    -moz-transition: .5s all ;
+    -ms-transition: .5s all ;
+    -o-transition: .5s all ;
+}
+nav ul button.btn-primary
+{
+    padding: 5px 18px;
+    background-color: transparent;
+    color: #fff;
+    font-weight: 600;
+
+    border: 1px solid #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+nav ul button.btn-primary:hover
+{
+    background-color: #fff;
+    color: #CC678B;
+    transition: .5s all ;
+    -webkit-transition: .5s all ;
+    -moz-transition: .5s all ;
+    -ms-transition: .5s all ;
+    -o-transition: .5s all ;
+}
+nav h1 img.search-icon
+{
+    width: 50px;
+    margin-top: 5%;
+}
+main.hero-container
+{
+    padding: 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #e990b0;
+}
+main.hero-container h1
+{
+    color: #fff;
+    font-size: 50px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-transform: uppercase;
+}
+main.hero-container h1 span
+{ position: relative; }
+#title_part1 
+{
+    color: #ffffff;
+    animation: part1-move 2s;
+    -webkit-animation: part1-move 2s;
+    transition: color .5s ;
+    -webkit-transition: color .5s ;
+    -moz-transition: color .5s ;
+    -ms-transition: color .5s ;
+    -o-transition: color .5s ;
+}
+@keyframes part1-move {
+    0%{ left: -100px; }
+    100%{ left: 0; }
+}
+#title_part2 
+{
+    display: inline-block;
+    animation: part2-move 2s;
+    -webkit-animation: part2-move 2s;
+
+    transition: color .5s ;
+    -webkit-transition: color .5s ;
+    -moz-transition: color .5s ;
+    -ms-transition: color .5s ;
+    -o-transition: color .5s ;
+}
+@keyframes part2-move {
+    0%{ left: 100px; }
+    100%{ left: 0; }
+    
+}
+main.hero-container img.hero-img
+{
+    max-width: 40%;
+}
+div.icon-arrow
+{
+    background-color: #CC678B;
+    border-radius: 20px;
+    color: #fff;
+    display: inline;
+    padding: 15px;
+    margin: 3%;
+    position: fixed;
+    bottom: -30px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+div.icon-arrow  a i
+{  color: #fff;  } 
+
+h1.service-head
+{
+    text-align: center;
+    margin: 5% 5% 15px 5%;
+    color: #CC678B;
+    font-size: 40px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+h1 + span::after
+{
+    content: '';
+    display: block;
+    width: 150px;
+    height: 2px;
+    margin: 0 auto;
+    border-radius: 30px;
+    background-color: #CC678B;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+h1 + span::before
+{
+    content: '';
+    display: block;
+    width: 25px;
+    height: 2px;
+    margin: -2px 3px;
+    position: relative;
+    left: 57%;
+    background-color: #CC678B;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+div.services-container
+{
+    margin: 5%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+div.services-container .box
+{
+    width: 25%;
+}
+div.services-container h3
+{
+    margin: 5%;
+    color: #CC678B;
+    font-size: 25px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+div.services-container p
+{
+    color: #927680;
+    font-size: 18px;
+    line-height: 2;
+}
+h1.secondry-header
+{
+    text-align: left;
+    white-space: pre-line;
+    margin-left: 15%;
+    margin-top: 10%;
+    text-transform: capitalize;
+    font-size: 40px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+h1.secondry-header + span::after
+{
+    content: '';
+    display: block;
+    width: 150px;
+    height: 2px;
+    margin: 2% 0 0 15%;
+    border-radius: 30px;
+    background-color: #CC678B;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+h1.secondry-header + span::before
+{
+    content: '';
+    display: block;
+    width: 25px;
+    height: 2px;
+    margin: -2px 3px;
+
+    position: relative;
+        left: 28%;
+        top: 25px;
+    background-color: #CC678B;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+
+div.content
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div.content p
+{
+    width: 40%;
+    font-size: 18px;
+    line-height: 1.5;
+}
+div.content img
+{
+    width: 30%;
+}
+div.secondry-container button.btn-secondry
+{
+   background-color: transparent;
+   color: #CC678B;
+   border: 2px solid #CC678B;
+   padding: 10px 25px;
+   margin: -5% 15% 5%;
+   cursor: pointer;
+}
+div.secondry-container button.btn-secondry:hover
+{
+    background-color: #CC678B;
+    color: #fff;
+}
+
